@@ -1,4 +1,4 @@
-const API_URL = "https://retoolapi.dev/msEo4e/expo"
+const API_URL = "https://https://6859bebd9f6ef96111541cc4.mockapi.io/Natalie/donas.dev/msEo4e/expo"
 
 async function  ObtenerDonas(){
     const res = await fetch(API_URL);
