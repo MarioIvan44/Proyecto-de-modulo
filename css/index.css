@@ -1,0 +1,264 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out 0.2s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.image-donut {
+    animation: bounce 1.5s infinite;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  
+.activelocal {
+    color: white !important;
+    background-color:  black !important;
+    margin-right: 20px;
+}
+.nav-link {
+color: black;
+}
+.fs-4 {
+    color: #4B2F2F;
+}
+.h2 {
+    color: #4B2F2F;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.title {
+    margin-left: 20px;
+}
+.btn-pink{
+    color: #4B2F2F !important;
+}
+
+.text1-rotated {
+    transform: rotate(-15deg);
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-align: left;
+    color: #4B2F2F;
+    margin-bottom: 20px;
+}
+
+
+.image {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.btn-pink {
+    background-color: #f8a5c2;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-pink:hover {
+    background-color: #f78fb1;
+    color: white;
+}
+
+.hr-divider{
+    /*background-color: #f78254 !important;*/
+    border: none;
+    height: 60px; 
+    width: 100%;
+    margin: 10px;
+    border-top: 20px dotted #f78254 !important;
+
+}
+hr{
+    border: none;
+}
+.container-image {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    left: 5%;
+  }
+  
+.image-background {
+    width: 20%;
+    height: auto;
+}
+.text2-rotated {
+    position: absolute;
+    top: 50%;
+    left: 15PX;
+    transform: rotate(-4deg);
+    font-weight: 900;
+    font-size: 2.7rem;
+    color: #4B2F2F;
+    margin-bottom: 20px;
+}
+.menu-title {
+    font-weight: 700;
+    color: #4B2F2F;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+  
+.menu-title::after {
+
+    display: block;
+    width: 80px;
+    height: 6px;
+    background-color: #F27289;
+    border-radius: 3px;
+    margin: 8px auto 0;
+}
+  
+.card-title {
+    color: #4B2F2F;
+}
+  
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+  
+.page-link{
+    color: grey !important;
+    background-color:  white !important;
+}
+.menu-donas{
+    background-image: linear-gradient(#ffffff, #f27289) !important;
+    padding: 60px 20px;
+}
+.page-link:hover {
+    background-color: #E4205B !important; 
+    color: white !important;
+    border-color: #E4205B !important;
+ }
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.donut-icon {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.footer-text {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    background-color: #f8838a;
+    color: #000;
+    margin: 0.8px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffb6c1;
+    color: #000;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
+
+.cards-grid {
+   
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
+.card {
+background-color: rgba(255, 255, 255, 0.6); backdrop-filter: blur(4px);
+  flex: 1 1 220px;
+  max-width: 300px;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform .2s;
+
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #555;
+  margin: 0.25rem 0 0.25rem;
+}
+
+.card p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card h2{
+    color: #555;
+    margin: 0.25rem 0 0.25rem;
+}

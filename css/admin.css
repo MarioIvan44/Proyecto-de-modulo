@@ -1,0 +1,236 @@
+html{
+    background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 1px solid #ccc;
+}
+ 
+.title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #3a2f2f;
+}
+ 
+.title span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+ 
+.activelocal {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+ 
+.activelocal:hover {
+  opacity: 0.9;
+}
+
+.imagenCentral{
+    margin-top: 60px;
+    margin-bottom: 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.imagenCentral img{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 800px;
+}
+
+.dona-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorPadre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 3;
+}
+
+.columna-izquierda img{
+  width: 500px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.fila label {
+  flex: 1;
+  color: #070611;
+}
+
+.columna-derecha {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+#btn-submit {
+  padding: 0.8rem 1.5rem;
+  background-color: #F9B7C5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+#btn-cancel {
+  padding: 0.8rem 1.5rem;
+  background-color: #F9B7C5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+input[type="text"],
+input[type="number"] {
+  background-color: white;
+  border: 2px solid #FF8B5C;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+input[type="file"]{
+    color: #241010;
+    border: none;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #FF8B5C;  /* Fondo del botón */
+  color: white;  
+  font-weight: bold;             /* Texto del botón */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Imágenes en la tabla */
+table img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+table th {
+    background-color: white;
+    color: #070611;
+}
+/* Espaciado en botones de acción */
+table button {
+  margin-right: 0.25rem;
+  background-color: #FF8B5C;
+  border: none;
+}
+
+table tr{
+    color: #FF8B5C;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff !important;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.donut-icon {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.footer-text {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    background-color: #f8838a;
+    color: #000;
+    margin: 0.8px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffb6c1;
+    color: #000;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
+.nav-link {
+color: black;
+}
+.fs-4 {
+    color: #4B2F2F;
+}
+.h2 {
+    color: #4B2F2F;
+}

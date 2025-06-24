@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="css/admin.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Administración de donas</title>
+  </head>
+
+  <body>
+    <!--HEADER-->
+     <header>
+    <a href="#" class="title">
+      <span>Circulo Dulce</span>
+      <img src="img/dona.png" alt="Logo" width="30" height="32">
+    </a>
+ 
+    <nav>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="#">ORDENA</a></li>
+        <li><a href="#">CONTACTANOS</a></li>
+        <li><a href="#">SOBRE NOSOTROS</a></li>
+        <li><a href="admin.html" class="activelocal">ADMINISTRACIÓN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="imagenCentral">
+      <img src="img/imagen.png" alt="imagen" />
+    </div>
+
+    <main class="container">
+      <!-- Formulario -->
+      <form id="dona-form" class="dona-form">
+        <div class="contenedorPadre">
+          <div class="columna-izquierda">
+            <div class="fila">
+              <label for="imagen-file"
+                >Imagen:
+                <input type="file" id="imagen-file" accept="image/*" />
+              </label>
+              <label for="nombre"
+                >Nombre:
+                <input type="text" id="nombre" required />
+              </label>
+            </div>
+
+            <div class="fila">
+              <label for="tipoDona"
+                >Tipo de dona (Tradicional / Rellena):
+                <input type="text" id="tipoDona" required />
+              </label>
+              <label for="precio"
+                >Precio:
+                <input type="number" step="0.01" id="precio" required />
+              </label>
+            </div>
+          </div>
+
+          <div class="columna-derecha">
+            <button type="submit" id="btn-submit">Agregar dona</button>
+            <!-- Botón para cancelar la edición y resetear el formulario -->
+            <button type="button" id="btn-cancel" hidden>Cancelar</button>
+          </div>
+        </div>
+
+        <!-- Guarda la URL de la imagen cuando se edita un registro (para no subirla de nuevo si no cambia) -->
+        <input type="hidden" id="imagen-url" />
+
+        <!-- Guarda el ID de la persona que se está editando (vacío en modo "agregar") -->
+        <input type="hidden" id="dona-id" />
+      </form>
+
+      <br />
+      <br />
+
+      <!-- Tabla de donas-->
+      <table>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="donas-tbody"></tbody>
+        <!-- inyectado por script -->
+      </table>
+
+      <div class="contenedorPadre">
+        <div class="columna-izquierda">
+          <img src="img/donas.png" alt="" />
+        </div>
+
+        <div class="columna-derecha">
+          <img src="img/donasrosaditas.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2 class="footer-title">CIRCULO DULCE</h2>
+        <p class="footer-text">
+          Donas artesanales, frescas y deliciosas todos los días. ¡Gracias por
+          endulzar tu día con nosotros! © 2025.
+        </p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="img/facebook.png" alt="facebuk" class="icon" /><i
+              class="fab fa-facebook-f"
+            ></i
+          ></a>
+          <a href="#"
+            ><img src="img/instagram.png" alt="" class="icon" /><i
+              class="fab fa-instagram"
+            ></i
+          ></a>
+          <a href="#"
+            ><img src="img/twitter.png" alt="" class="icon" /><i
+              class="fab fa-twitter"
+            ></i
+          ></a>
+          <a href="#"
+            ><img src="img/tiktok.png" alt="" class="icon" /><i
+              class="fab fa-tiktok"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/admin.js"></script>
+  </body>
+</html>
