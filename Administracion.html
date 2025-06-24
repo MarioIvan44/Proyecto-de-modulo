@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/Administracion.css">
+    <title>Administración de donas</title>
 </head>
+
 <body>
     <!--HEADER-->
 
     <div class="imagenCentral">
-         <img src="img/imagen.png" alt="imagen">
+        <img src="img/imagen.png" alt="imagen">
     </div>
 
     <main class="container">
         <!-- Formulario -->
         <form id="dona-form" class="dona-form">
-            <div class="flex">
-                <label for="imagen-file">Imagen:
-                    <input type= "file" id="imagen-file" accept="image/*" />
-                </label>
-                <label for="nombre">Nombre:
-                    <input type="text" id="nombre" required />
-                </label>
-                <label for="tipoDona">Tipo de dona (Tradicional / Rellena):
-                    <input type="text" id="tipoDona" required />
-                </label>
-                <label for="precio">Precio:
-                    <input type = "number" id="precio" required />
-                </label>
+            <div class="contenedorPadre">
+                <div class="columna-izquierda">
+                    <div class="fila">
+                        <label for="imagen-file">Imagen:
+                            <input type="file" id="imagen-file" accept="image/*" />
+                        </label>
+                        <label for="nombre">Nombre:
+                            <input type="text" id="nombre" required />
+                        </label>
+                    </div>
+
+                    <div class="fila">
+                        <label for="tipoDona">Tipo de dona (Tradicional / Rellena):
+                            <input type="text" id="tipoDona" required />
+                        </label>
+                        <label for="precio">Precio:
+                            <input type="number" id="precio" required />
+                        </label>
+                    </div>
+                </div>
+
+                <div class="columna-derecha">
+                    <button type="submit" id="btn-submit">Agregar dona</button>
+                </div>
             </div>
-      
-      <!-- Guarda la URL de la imagen cuando se edita un registro (para no subirla de nuevo si no cambia) -->
-      <input type="hidden" id="imagen-url" />
 
-      <!-- Guarda el ID de la persona que se está editando (vacío en modo "agregar") -->
-      <input type="hidden" id="persona-id" />
+            <!-- Guarda la URL de la imagen cuando se edita un registro (para no subirla de nuevo si no cambia) -->
+            <input type="hidden" id="imagen-url" />
 
-      <!-- Botón principal para agregar o actualizar un registro -->
-      <button type="submit" id="btn-submit">Agregar</button>
+            <!-- Guarda el ID de la persona que se está editando (vacío en modo "agregar") -->
+            <input type="hidden" id="dona-id" />
 
-      <!-- Botón para cancelar la edición y resetear el formulario -->
-      <button type="button" id="btn-cancel" hidden>Cancelar</button>
+            <!-- Botón para cancelar la edición y resetear el formulario -->
+            <button type="button" id="btn-cancel" hidden>Cancelar</button>
+        </form>
 
-    </form>
+        <br>
+        <br>
+
+        <!-- Tabla de donas-->
+         <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="donas-tbody"></tbody>
+                <!-- inyectado por script -->
+         </table>
     </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/administracion.js"></script>
 </body>
+
 </html>
