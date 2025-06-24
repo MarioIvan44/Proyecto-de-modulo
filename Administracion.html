@@ -14,8 +14,37 @@
          <img src="img/imagen.png" alt="imagen">
     </div>
 
-    <div class="container">
-        
-    </div>
+    <main class="container">
+        <!-- Formulario -->
+        <form id="dona-form" class="dona-form">
+            <div class="flex">
+                <label for="imagen-file">Imagen:
+                    <input type= "file" id="imagen-file" accept="image/*" />
+                </label>
+                <label for="nombre">Nombre:
+                    <input type="text" id="nombre" required />
+                </label>
+                <label for="tipoDona">Tipo de dona (Tradicional / Rellena):
+                    <input type="text" id="tipoDona" required />
+                </label>
+                <label for="precio">Precio:
+                    <input type = "number" id="precio" required />
+                </label>
+            </div>
+      
+      <!-- Guarda la URL de la imagen cuando se edita un registro (para no subirla de nuevo si no cambia) -->
+      <input type="hidden" id="imagen-url" />
+
+      <!-- Guarda el ID de la persona que se está editando (vacío en modo "agregar") -->
+      <input type="hidden" id="persona-id" />
+
+      <!-- Botón principal para agregar o actualizar un registro -->
+      <button type="submit" id="btn-submit">Agregar</button>
+
+      <!-- Botón para cancelar la edición y resetear el formulario -->
+      <button type="button" id="btn-cancel" hidden>Cancelar</button>
+
+    </form>
+    </main>
 </body>
 </html>

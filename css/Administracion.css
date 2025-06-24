@@ -1,0 +1,20 @@
+.imagenCentral{
+    margin-top: 60px;
+    margin-bottom: 50px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.imagenCentral img{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 800px;
+}
+
+.dona-form .flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
